@@ -1,0 +1,244 @@
+{
+  "benchmark_id": "hp1-ch1-4-benchmark-v1",
+  "created_before_experiments": true,
+  "selection_criterion_locked_before_test": "Select final strategy on the 15 dev questions by prioritizing: (1) highest Dev Evidence Hit@3, (2) highest Dev Hit@1, (3) highest manual Chunk Coherence & Metadata Filter compliance, and (4) reasonable chunk count/ingestion cost. Do not tune parameters on the 5 test questions.",
+  "corpus_source_id": "hp1-ch1-4",
+  "total_questions": 20,
+  "dev_count": 15,
+  "test_count": 5,
+  "filter_question_count": 5,
+  "dev_filter_question_count": 3,
+  "test_filter_question_count": 2,
+  "questions": [
+    {
+      "id": "q01",
+      "split": "dev",
+      "type": "truc_tiep",
+      "question": "What was the name of the firm Mr. Dursley directed, and what product did it manufacture?",
+      "expected_answer": "Grunnings, a firm that made drills.",
+      "gold_source_id": "hp1-ch1-4",
+      "gold_page": 12,
+      "evidence_quote": "Mr. Dursley was the director of a firm called Grunnings, which made drills.",
+      "filter": null
+    },
+    {
+      "id": "q02",
+      "split": "dev",
+      "type": "metadata_filter",
+      "question": "What did Dudley do during his tantrum at breakfast before his father left the house?",
+      "expected_answer": "Dudley threw his cereal at the walls while having a tantrum in his high chair.",
+      "gold_source_id": "hp1-ch1-4",
+      "gold_page": 13,
+      "evidence_quote": "Dudley was now having a tantrum and throwing his cereal at the walls.",
+      "filter": {
+        "section": "chapter_1"
+      }
+    },
+    {
+      "id": "q03",
+      "split": "dev",
+      "type": "dieu_kien",
+      "question": "According to the weatherman Jim McGuffin, what unusual phenomenon did viewers in Kent, Yorkshire, and Dundee report instead of the promised rain, and what holiday did he compare it to?",
+      "expected_answer": "Viewers reported a downpour of shooting stars instead of rain, which Jim McGuffin joked was like celebrating Bonfire Night early (which was not until the following week).",
+      "gold_source_id": "hp1-ch1-4",
+      "gold_page": 16,
+      "evidence_quote": "Viewers as far apart as Kent, Yorkshire, and Dundee have been phoning in to tell me that instead of the rain I promised yesterday, they’ve had a downpour of shooting stars! Perhaps people have been celebrating Bonfire Night early — it’s not until next week, folks!",
+      "filter": null
+    },
+    {
+      "id": "q04",
+      "split": "dev",
+      "type": "truc_tiep",
+      "question": "How many times did Albus Dumbledore click the Put-Outer to extinguish the street lamps on Privet Drive?",
+      "expected_answer": "He clicked the Put-Outer twelve times.",
+      "gold_source_id": "hp1-ch1-4",
+      "gold_page": 18,
+      "evidence_quote": "Twelve times he clicked the Put-Outer, until the only lights left on the whole street were two tiny pinpricks in the distance, which were the eyes of the cat watching him.",
+      "filter": null
+    },
+    {
+      "id": "q05",
+      "split": "dev",
+      "type": "dien_dat_lai",
+      "question": "Who did Professor McGonagall suspect was responsible for setting off the shooting stars in Kent?",
+      "expected_answer": "Dedalus Diggle, whom she remarked never had much sense.",
+      "gold_source_id": "hp1-ch1-4",
+      "gold_page": 19,
+      "evidence_quote": "Shooting stars down in Kent — I’ll bet that was Dedalus Diggle. He never had much sense.",
+      "filter": null
+    },
+    {
+      "id": "q06",
+      "split": "dev",
+      "type": "dieu_kien",
+      "question": "Why did Dumbledore insist it was better for Harry to grow up with his aunt and uncle rather than in the wizarding world?",
+      "expected_answer": "Because Harry would be famous before he could walk and talk for something he wouldn't even remember, which would turn any boy's head, so he was better off growing up away from all that until he was ready.",
+      "gold_source_id": "hp1-ch1-4",
+      "gold_page": 22,
+      "evidence_quote": "It would be enough to turn any boy’s head. Famous before he can walk and talk! Famous for something he won’t even remember! Can’t you see how much better off he’ll be, growing up away from all that until he’s ready to take it?",
+      "filter": null
+    },
+    {
+      "id": "q07",
+      "split": "dev",
+      "type": "truc_tiep",
+      "question": "From whom did Hagrid borrow the huge flying motorcycle used to bring baby Harry to Privet Drive?",
+      "expected_answer": "Young Sirius Black lent the motorcycle to Hagrid.",
+      "gold_source_id": "hp1-ch1-4",
+      "gold_page": 23,
+      "evidence_quote": "Young Sirius Black lent it to me. I’ve got him, sir.",
+      "filter": null
+    },
+    {
+      "id": "q08",
+      "split": "dev",
+      "type": "dien_dat_lai",
+      "question": "What unusual scar does Dumbledore say he has above his left knee?",
+      "expected_answer": "A scar that is a perfect map of the London Underground.",
+      "gold_source_id": "hp1-ch1-4",
+      "gold_page": 23,
+      "evidence_quote": "Scars can come in handy. I have one myself above my left knee that is a perfect map of the London Underground.",
+      "filter": null
+    },
+    {
+      "id": "q09",
+      "split": "dev",
+      "type": "metadata_filter",
+      "question": "What explanation was Harry given about how his parents died and how he got the lightning-shaped scar on his forehead?",
+      "expected_answer": "Aunt Petunia told him he got the scar in the car crash when his parents died, and ordered him not to ask questions.",
+      "gold_source_id": "hp1-ch1-4",
+      "gold_page": 28,
+      "evidence_quote": "“In the car crash when your parents died,” she had said. “And don’t ask questions.”",
+      "filter": {
+        "section": "chapter_2"
+      }
+    },
+    {
+      "id": "q10",
+      "split": "dev",
+      "type": "dieu_kien",
+      "question": "What specific birthday presents did Harry and Uncle Vernon watch Dudley unwrap while Aunt Petunia went to answer the telephone?",
+      "expected_answer": "A racing bike, a video camera, a remote control airplane, sixteen new computer games, and a VCR (and he was ripping the paper off a gold wristwatch when she returned).",
+      "gold_source_id": "hp1-ch1-4",
+      "gold_page": 29,
+      "evidence_quote": "At that moment the telephone rang and Aunt Petunia went to answer it while Harry and Uncle Vernon watched Dudley unwrap the racing bike, a video camera, a remote control airplane, sixteen new computer games, and a VCR.",
+      "filter": null
+    },
+    {
+      "id": "q11",
+      "split": "dev",
+      "type": "dien_dat_lai",
+      "question": "Why did Harry hate being left at Mrs. Figg's house every year on Dudley's birthday, and what were the names of her cats?",
+      "expected_answer": "Her whole house smelled of cabbage and she made him look at photographs of all the cats she had ever owned: Tibbles, Snowy, Mr. Paws, and Tufty.",
+      "gold_source_id": "hp1-ch1-4",
+      "gold_page": 29,
+      "evidence_quote": "Every year, Harry was left behind with Mrs. Figg, a mad old lady who lived two streets away. Harry hated it there. The whole house smelled of cabbage and Mrs. Figg made him look at photographs of all the cats she’d ever owned.",
+      "filter": null
+    },
+    {
+      "id": "q12",
+      "split": "dev",
+      "type": "dieu_kien",
+      "question": "Why had the boa constrictor in the reptile house never actually been to Brazil despite the sign on its tank?",
+      "expected_answer": "Because the sign noted that the specimen was bred in the zoo.",
+      "gold_source_id": "hp1-ch1-4",
+      "gold_page": 34,
+      "evidence_quote": "The boa constrictor jabbed its tail at the sign again and Harry read on: This specimen was bred in the zoo.",
+      "filter": null
+    },
+    {
+      "id": "q13",
+      "split": "dev",
+      "type": "truc_tiep",
+      "question": "Which secondary schools were Dudley and Piers Polkiss set to attend in September, as opposed to the school Harry was going to attend?",
+      "expected_answer": "Dudley and Piers Polkiss were going to Uncle Vernon's old private school, Smeltings, whereas Harry was going to the local public school, Stonewall High.",
+      "gold_source_id": "hp1-ch1-4",
+      "gold_page": 37,
+      "evidence_quote": "Dudley had been accepted at Uncle Vernon’s old private school, Smeltings. Piers Polkiss was going there too. Harry, on the other hand, was going to Stonewall High, the local public school.",
+      "filter": null
+    },
+    {
+      "id": "q14",
+      "split": "dev",
+      "type": "metadata_filter",
+      "question": "Why was Dudley howling and so miserable by the end of the day?",
+      "expected_answer": "They hadn't stopped to eat or drink all day, so Dudley was hungry, had missed five television programs he wanted to see, and had never gone so long without blowing up an alien on his computer.",
+      "gold_source_id": "hp1-ch1-4",
+      "gold_page": 46,
+      "evidence_quote": "By nightfall Dudley was howling. He’d never had such a bad day in his life. He was hungry, he’d missed five television programs he’d wanted to see, and he’d never gone so long without blowing up an alien on his computer.",
+      "filter": {
+        "section": "chapter_3"
+      }
+    },
+    {
+      "id": "q15",
+      "split": "dev",
+      "type": "dien_dat_lai",
+      "question": "What four animals surrounded the capital letter H on the purple wax seal of Harry's letter?",
+      "expected_answer": "A lion, an eagle, a badger, and a snake surrounding a large letter H.",
+      "gold_source_id": "hp1-ch1-4",
+      "gold_page": 40,
+      "evidence_quote": "Turning the envelope over, his hand trembling, Harry saw a purple wax seal bearing a coat of arms; a lion, an eagle, a badger, and a snake surrounding a large letter H.",
+      "filter": null
+    },
+    {
+      "id": "q16",
+      "split": "test",
+      "type": "dieu_kien",
+      "question": "How did twenty-four letters to Harry get inside the house on Saturday after the doors had been boarded up?",
+      "expected_answer": "They were rolled up and hidden inside each of the two dozen eggs that the confused milkman handed to Aunt Petunia through the living room window.",
+      "gold_source_id": "hp1-ch1-4",
+      "gold_page": 44,
+      "evidence_quote": "Twenty-four letters to Harry found their way into the house, rolled up and hidden inside each of the two dozen eggs that their very confused milkman had handed Aunt Petunia through the living room window.",
+      "filter": null
+    },
+    {
+      "id": "q17",
+      "split": "test",
+      "type": "metadata_filter",
+      "question": "What vehicle was in the dream Harry tried to remember when he woke up, and what feeling did he have about that dream?",
+      "expected_answer": "There had been a flying motorcycle in the dream, and he had a funny feeling he had had the same dream before.",
+      "gold_source_id": "hp1-ch1-4",
+      "gold_page": 27,
+      "evidence_quote": "There had been a flying motorcycle in it. He had a funny feeling he’d had the same dream before.",
+      "filter": {
+        "section": "chapter_2"
+      }
+    },
+    {
+      "id": "q18",
+      "split": "test",
+      "type": "dieu_kien",
+      "question": "What items did the giant pull out of the pockets of his coat before cooking sausages in the hut on the rock?",
+      "expected_answer": "A copper kettle, a squashy package of sausages, a poker, a teapot, several chipped mugs, and a bottle of amber liquid that he took a swig from before making tea.",
+      "gold_source_id": "hp1-ch1-4",
+      "gold_page": 52,
+      "evidence_quote": "The giant sat back down on the sofa, which sagged under his weight, and began taking all sorts of things out of the pockets of his coat: a copper kettle, a squashy package of sausages, a poker, a teapot, several chipped mugs, and a bottle of some amber liquid that he took a swig from before starting to make tea. Soon the hut was full of the sound and smell of sizzling sausage.",
+      "filter": null
+    },
+    {
+      "id": "q19",
+      "split": "test",
+      "type": "metadata_filter",
+      "question": "According to the letter signed by Deputy Headmistress Minerva McGonagall, when does the school term begin and what is the deadline for sending an owl reply?",
+      "expected_answer": "Term begins on September 1, and they await an owl reply by no later than July 31.",
+      "gold_source_id": "hp1-ch1-4",
+      "gold_page": 55,
+      "evidence_quote": "Term begins on September 1. We await your owl by no later than July 31.",
+      "filter": {
+        "section": "chapter_4"
+      }
+    },
+    {
+      "id": "q20",
+      "split": "test",
+      "type": "truc_tiep",
+      "question": "Why is Hagrid strictly speaking not supposed to do magic, and in which school year was he expelled from Hogwarts?",
+      "expected_answer": "He was expelled from Hogwarts in his third year and they snapped his wand in half, though Dumbledore let him stay on as gamekeeper.",
+      "gold_source_id": "hp1-ch1-4",
+      "gold_page": 61,
+      "evidence_quote": "“Oh, well — I was at Hogwarts meself but I — er — got expelled, ter tell yeh the truth. In me third year. They snapped me wand in half an’ everything. But Dumbledore let me stay on as gamekeeper. Great man, Dumbledore.”",
+      "filter": null
+    }
+  ]
+}

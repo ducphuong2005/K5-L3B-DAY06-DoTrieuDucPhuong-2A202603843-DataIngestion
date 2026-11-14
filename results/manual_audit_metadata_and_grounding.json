@@ -1,0 +1,357 @@
+{
+  "annotator": "Đỗ Triệu Đức Phương (MSSV: 2A202603843)",
+  "evaluated_split": "test",
+  "questions_per_strategy": 5,
+  "summary": {
+    "A": {
+      "count": 5,
+      "score_0": 0,
+      "score_1": 2,
+      "score_2": 3,
+      "mean_score": 1.6
+    },
+    "B": {
+      "count": 5,
+      "score_0": 0,
+      "score_1": 1,
+      "score_2": 4,
+      "mean_score": 1.8
+    },
+    "C": {
+      "count": 5,
+      "score_0": 0,
+      "score_1": 1,
+      "score_2": 4,
+      "mean_score": 1.8
+    }
+  },
+  "samples": [
+    {
+      "strategy": "A",
+      "question_id": "q16",
+      "question": "How did twenty-four letters to Harry get inside the house on Saturday after the doors had been boarded up?",
+      "gold_page": 44,
+      "filter_used": null,
+      "retrieved_pages": [
+        44,
+        44,
+        43
+      ],
+      "retrieved_chunks": [
+        "hp1-ch1-4_p044_fixed_03",
+        "hp1-ch1-4_p044_fixed_02",
+        "hp1-ch1-4_p043_fixed_03"
+      ],
+      "hit_at_1": false,
+      "evidence_hit_at_3": false,
+      "grounding_score": 1,
+      "rationale": "Top-3 lấy đúng trang vàng p.44 ở hạng 1 và 2 (fixed_03, fixed_02), nhưng câu bằng chứng về 24 lá thư giấu trong 2 tá trứng nằm sát cuối cửa sổ fixed_03 (ký tự 1350–1850) và bị cắt ở mốc 1850, nên không chunk nào trong Top-3 chứa trọn câu."
+    },
+    {
+      "strategy": "A",
+      "question_id": "q17",
+      "question": "What vehicle was in the dream Harry tried to remember when he woke up, and what feeling did he have about that dream?",
+      "gold_page": 27,
+      "filter_used": {
+        "section": "chapter_2"
+      },
+      "retrieved_pages": [
+        26,
+        32,
+        32
+      ],
+      "retrieved_chunks": [
+        "hp1-ch1-4_p026_fixed_03",
+        "hp1-ch1-4_p032_fixed_01",
+        "hp1-ch1-4_p032_fixed_00"
+      ],
+      "hit_at_1": false,
+      "evidence_hit_at_3": false,
+      "grounding_score": 1,
+      "rationale": "Top-3 trả về p.26 (cuối trang có câu Harry cố nhớ lại giấc mơ) và p.32 (Harry kể lại giấc mơ có chiếc mô-tô bay), nhưng thiếu đầu trang p.27 nơi nêu đầy đủ cả chiếc mô-tô bay lẫn cảm giác đã mơ giấc mơ này trước đó."
+    },
+    {
+      "strategy": "A",
+      "question_id": "q18",
+      "question": "What items did the giant pull out of the pockets of his coat before cooking sausages in the hut on the rock?",
+      "gold_page": 52,
+      "filter_used": null,
+      "retrieved_pages": [
+        52,
+        52,
+        52
+      ],
+      "retrieved_chunks": [
+        "hp1-ch1-4_p052_fixed_01",
+        "hp1-ch1-4_p052_fixed_02",
+        "hp1-ch1-4_p052_fixed_00"
+      ],
+      "hit_at_1": true,
+      "evidence_hit_at_3": true,
+      "grounding_score": 2,
+      "rationale": "Chunk hạng 1 (hp1-ch1-4_p052_fixed_01, p.52) chứa đầy đủ danh sách các vật dụng Hagrid lấy từ túi áo khoác (ấm đồng, gói xúc xích, que cời lửa, ấm trà, cốc sứt và chai rượu màu hổ phách) cùng nguồn trang chính xác."
+    },
+    {
+      "strategy": "A",
+      "question_id": "q19",
+      "question": "According to the letter signed by Deputy Headmistress Minerva McGonagall, when does the school term begin and what is the deadline for sending an owl reply?",
+      "gold_page": 55,
+      "filter_used": {
+        "section": "chapter_4"
+      },
+      "retrieved_pages": [
+        55,
+        54,
+        55
+      ],
+      "retrieved_chunks": [
+        "hp1-ch1-4_p055_fixed_00",
+        "hp1-ch1-4_p054_fixed_02",
+        "hp1-ch1-4_p055_fixed_01"
+      ],
+      "hit_at_1": true,
+      "evidence_hit_at_3": true,
+      "grounding_score": 2,
+      "rationale": "Chunk hạng 1 (hp1-ch1-4_p055_fixed_00, p.55) chứa nguyên văn bức thư của Phó Hiệu trưởng Minerva McGonagall ghi rõ ngày khai giảng 1/9 và hạn chót gửi cú phản hồi trước 31/7."
+    },
+    {
+      "strategy": "A",
+      "question_id": "q20",
+      "question": "Why is Hagrid strictly speaking not supposed to do magic, and in which school year was he expelled from Hogwarts?",
+      "gold_page": 61,
+      "filter_used": null,
+      "retrieved_pages": [
+        61,
+        61,
+        56
+      ],
+      "retrieved_chunks": [
+        "hp1-ch1-4_p061_fixed_03",
+        "hp1-ch1-4_p061_fixed_02",
+        "hp1-ch1-4_p056_fixed_00"
+      ],
+      "hit_at_1": true,
+      "evidence_hit_at_3": true,
+      "grounding_score": 2,
+      "rationale": "Chunk hạng 2 (hp1-ch1-4_p061_fixed_03, p.61) chứa trọn vẹn lời giải thích của Hagrid về việc ông bị đuổi học năm thứ ba, bị bẻ gãy đũa phép và được Dumbledore cho ở lại làm người giữ khóa."
+    },
+    {
+      "strategy": "B",
+      "question_id": "q16",
+      "question": "How did twenty-four letters to Harry get inside the house on Saturday after the doors had been boarded up?",
+      "gold_page": 44,
+      "filter_used": null,
+      "retrieved_pages": [
+        44,
+        44,
+        43
+      ],
+      "retrieved_chunks": [
+        "hp1-ch1-4_p044_para_02",
+        "hp1-ch1-4_p044_para_01",
+        "hp1-ch1-4_p043_para_02"
+      ],
+      "hit_at_1": true,
+      "evidence_hit_at_3": true,
+      "grounding_score": 2,
+      "rationale": "Chunk hạng 1 (hp1-ch1-4_p044_para_02, p.44) giữ nguyên cả đoạn văn mô tả 24 lá thư được cuộn tròn giấu trong 2 tá trứng do người giao sữa đưa cho dì Petunia qua cửa sổ phòng khách."
+    },
+    {
+      "strategy": "B",
+      "question_id": "q17",
+      "question": "What vehicle was in the dream Harry tried to remember when he woke up, and what feeling did he have about that dream?",
+      "gold_page": 27,
+      "filter_used": {
+        "section": "chapter_2"
+      },
+      "retrieved_pages": [
+        32,
+        26,
+        35
+      ],
+      "retrieved_chunks": [
+        "hp1-ch1-4_p032_para_00",
+        "hp1-ch1-4_p026_para_01",
+        "hp1-ch1-4_p035_para_02"
+      ],
+      "hit_at_1": false,
+      "evidence_hit_at_3": false,
+      "grounding_score": 1,
+      "rationale": "Top-3 trả về [p.32, p.26, p.35]: có thông tin Harry mơ thấy mô-tô bay (p.32) và chi tiết thức dậy cố nhớ lại giấc mơ (cuối p.26), nhưng do đoạn văn bị ngắt qua trang PDF p.26->p.27 nên thiếu câu đầu trang p.27 về cảm giác đã mơ giấc mơ này trước đây."
+    },
+    {
+      "strategy": "B",
+      "question_id": "q18",
+      "question": "What items did the giant pull out of the pockets of his coat before cooking sausages in the hut on the rock?",
+      "gold_page": 52,
+      "filter_used": null,
+      "retrieved_pages": [
+        52,
+        50,
+        52
+      ],
+      "retrieved_chunks": [
+        "hp1-ch1-4_p052_para_01",
+        "hp1-ch1-4_p050_para_01",
+        "hp1-ch1-4_p052_para_00"
+      ],
+      "hit_at_1": true,
+      "evidence_hit_at_3": true,
+      "grounding_score": 2,
+      "rationale": "Chunk hạng 1 (hp1-ch1-4_p052_para_01, p.52) chứa trọn vẹn đoạn văn liệt kê toàn bộ đồ vật Hagrid lấy từ túi áo khoác và chi tiết nướng xúc xích, đủ bằng chứng trả lời và truy vết nguồn."
+    },
+    {
+      "strategy": "B",
+      "question_id": "q19",
+      "question": "According to the letter signed by Deputy Headmistress Minerva McGonagall, when does the school term begin and what is the deadline for sending an owl reply?",
+      "gold_page": 55,
+      "filter_used": {
+        "section": "chapter_4"
+      },
+      "retrieved_pages": [
+        55,
+        54,
+        14
+      ],
+      "retrieved_chunks": [
+        "hp1-ch1-4_p055_para_00",
+        "hp1-ch1-4_p054_para_01",
+        "hp1-ch1-4_p014_para_01"
+      ],
+      "hit_at_1": true,
+      "evidence_hit_at_3": true,
+      "grounding_score": 2,
+      "rationale": "Chunk hạng 1 (hp1-ch1-4_p055_para_00, p.55) chứa đầy đủ nội dung thư của Giáo sư McGonagall (khai giảng 1/9, hạn gửi cú 31/7), tuy nhiên ở hạng 3 bị lọt chunk p.14 (chapter_1) do không dùng filter."
+    },
+    {
+      "strategy": "B",
+      "question_id": "q20",
+      "question": "Why is Hagrid strictly speaking not supposed to do magic, and in which school year was he expelled from Hogwarts?",
+      "gold_page": 61,
+      "filter_used": null,
+      "retrieved_pages": [
+        61,
+        60,
+        56
+      ],
+      "retrieved_chunks": [
+        "hp1-ch1-4_p061_para_01",
+        "hp1-ch1-4_p060_para_02",
+        "hp1-ch1-4_p056_para_00"
+      ],
+      "hit_at_1": true,
+      "evidence_hit_at_3": true,
+      "grounding_score": 2,
+      "rationale": "Chunk hạng 1 (hp1-ch1-4_p061_para_01, p.61) chứa đầy đủ đoạn hội thoại Hagrid thú nhận bị đuổi học năm thứ ba, bị bẻ đũa phép và được Dumbledore giữ lại làm gamekeeper."
+    },
+    {
+      "strategy": "C",
+      "question_id": "q16",
+      "question": "How did twenty-four letters to Harry get inside the house on Saturday after the doors had been boarded up?",
+      "gold_page": 44,
+      "filter_used": null,
+      "retrieved_pages": [
+        44,
+        44,
+        43
+      ],
+      "retrieved_chunks": [
+        "hp1-ch1-4_p044_para_02",
+        "hp1-ch1-4_p044_para_01",
+        "hp1-ch1-4_p043_para_02"
+      ],
+      "hit_at_1": true,
+      "evidence_hit_at_3": true,
+      "grounding_score": 2,
+      "rationale": "Câu hỏi không có filter nên Chiến lược C giữ nguyên kết quả của B: chunk hạng 1 (hp1-ch1-4_p044_para_02, p.44) cung cấp đầy đủ bằng chứng về 24 lá thư giấu trong 2 tá trứng."
+    },
+    {
+      "strategy": "C",
+      "question_id": "q17",
+      "question": "What vehicle was in the dream Harry tried to remember when he woke up, and what feeling did he have about that dream?",
+      "gold_page": 27,
+      "filter_used": {
+        "section": "chapter_2"
+      },
+      "retrieved_pages": [
+        32,
+        26,
+        35
+      ],
+      "retrieved_chunks": [
+        "hp1-ch1-4_p032_para_00",
+        "hp1-ch1-4_p026_para_01",
+        "hp1-ch1-4_p035_para_02"
+      ],
+      "hit_at_1": false,
+      "evidence_hit_at_3": false,
+      "grounding_score": 1,
+      "rationale": "Filter section=chapter_2 được tuân thủ 3/3 chunk ([p.32, p.26, p.35]), cung cấp được chi tiết mô-tô bay (p.32) và lúc mới ngủ dậy (p.26), nhưng thiếu câu đầu trang p.27 do đoạn văn bị ngắt qua ranh giới trang PDF."
+    },
+    {
+      "strategy": "C",
+      "question_id": "q18",
+      "question": "What items did the giant pull out of the pockets of his coat before cooking sausages in the hut on the rock?",
+      "gold_page": 52,
+      "filter_used": null,
+      "retrieved_pages": [
+        52,
+        50,
+        52
+      ],
+      "retrieved_chunks": [
+        "hp1-ch1-4_p052_para_01",
+        "hp1-ch1-4_p050_para_01",
+        "hp1-ch1-4_p052_para_00"
+      ],
+      "hit_at_1": true,
+      "evidence_hit_at_3": true,
+      "grounding_score": 2,
+      "rationale": "Chunk hạng 1 (hp1-ch1-4_p052_para_01, p.52) cung cấp đầy đủ danh sách các món đồ trong túi áo của Hagrid và ngữ cảnh nấu trà, nướng xúc xích."
+    },
+    {
+      "strategy": "C",
+      "question_id": "q19",
+      "question": "According to the letter signed by Deputy Headmistress Minerva McGonagall, when does the school term begin and what is the deadline for sending an owl reply?",
+      "gold_page": 55,
+      "filter_used": {
+        "section": "chapter_4"
+      },
+      "retrieved_pages": [
+        55,
+        54,
+        55
+      ],
+      "retrieved_chunks": [
+        "hp1-ch1-4_p055_para_00",
+        "hp1-ch1-4_p054_para_01",
+        "hp1-ch1-4_p055_para_01"
+      ],
+      "hit_at_1": true,
+      "evidence_hit_at_3": true,
+      "grounding_score": 2,
+      "rationale": "Nhờ filter section=chapter_4, cả 3 chunk Top-3 đều thuộc Chương 4 ([p.55, p.54, p.55]), và chunk hạng 1 (hp1-ch1-4_p055_para_00) chứa đầy đủ ngày khai giảng 1/9 cùng hạn phản hồi 31/7."
+    },
+    {
+      "strategy": "C",
+      "question_id": "q20",
+      "question": "Why is Hagrid strictly speaking not supposed to do magic, and in which school year was he expelled from Hogwarts?",
+      "gold_page": 61,
+      "filter_used": null,
+      "retrieved_pages": [
+        61,
+        60,
+        56
+      ],
+      "retrieved_chunks": [
+        "hp1-ch1-4_p061_para_01",
+        "hp1-ch1-4_p060_para_02",
+        "hp1-ch1-4_p056_para_00"
+      ],
+      "hit_at_1": true,
+      "evidence_hit_at_3": true,
+      "grounding_score": 2,
+      "rationale": "Chunk hạng 1 (hp1-ch1-4_p061_para_01, p.61) chứa trọn vẹn lời giải thích của Hagrid về lý do không được phép dùng phép thuật và việc bị đuổi học năm thứ ba."
+    }
+  ]
+}

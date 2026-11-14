@@ -1,0 +1,273 @@
+{
+  "run_timestamp": "2026-11-14T10:54:37+0700",
+  "corpus": {
+    "source_id": "hp1-ch1-4",
+    "source_path": "starter/data/harrypotter.pdf",
+    "physical_pages_inspected": 61,
+    "excluded_pages_count": 11,
+    "valid_content_pages_count": 50,
+    "total_normalized_characters": 87235,
+    "parse_and_normalize_seconds": 10.073
+  },
+  "embedding_model": {
+    "provider": "OpenAI-compatible API (ShopAI)",
+    "base_url": "https://api.shopaikey.com/v1",
+    "model_name": "text-embedding-3-small",
+    "dimensions": 1536,
+    "similarity_metric": "cosine (<=> in pgvector, exact search)",
+    "total_prompt_tokens": 44421,
+    "total_api_requests": 33,
+    "total_estimated_cost_usd": 0.000888
+  },
+  "vector_store": {
+    "engine": "PostgreSQL 16 + pgvector (image pgvector/pgvector:0.8.7-pg16, Docker local 127.0.0.1:55433)",
+    "table": "rag_chunks",
+    "search_mode": "exact cosine distance (<=>)"
+  },
+  "strategy_stats": {
+    "A": {
+      "strategy": "A",
+      "description": "Fixed-size chunking (size=500 chars, overlap=50 chars), no metadata filter at search time",
+      "chunking": "fixed_size(size=500, overlap=50)",
+      "metadata_filter_enabled": false,
+      "chunk_stats": {
+        "count": 219,
+        "total_chars": 95685,
+        "approx_tokens": 23921,
+        "min_chars": 62,
+        "median_chars": 500.0,
+        "mean_chars": 436.9,
+        "max_chars": 500
+      },
+      "ingest_and_embed_seconds": 26.894,
+      "embedding_tokens": 23064,
+      "estimated_cost_usd": 0.000461,
+      "stored_count_initial": 219,
+      "stored_count_after_reingest": 219,
+      "idempotent_reingest_verified": true
+    },
+    "B": {
+      "strategy": "B",
+      "description": "Paragraph-aware chunking (max_size=900 chars), no metadata filter at search time",
+      "chunking": "by_paragraph(max_size=900)",
+      "metadata_filter_enabled": false,
+      "chunk_stats": {
+        "count": 134,
+        "total_chars": 87069,
+        "approx_tokens": 21767,
+        "min_chars": 133,
+        "median_chars": 712.5,
+        "mean_chars": 649.8,
+        "max_chars": 896
+      },
+      "ingest_and_embed_seconds": 15.538,
+      "embedding_tokens": 20891,
+      "estimated_cost_usd": 0.000418,
+      "stored_count_initial": 134,
+      "stored_count_after_reingest": 134,
+      "idempotent_reingest_verified": true
+    },
+    "C": {
+      "strategy": "C",
+      "description": "Paragraph-aware chunking (max_size=900 chars) + SQL metadata filter (section) when provided by query context",
+      "chunking": "by_paragraph(max_size=900)",
+      "metadata_filter_enabled": true,
+      "chunk_stats": {
+        "count": 134,
+        "total_chars": 87069,
+        "approx_tokens": 21767,
+        "min_chars": 133,
+        "median_chars": 712.5,
+        "mean_chars": 649.8,
+        "max_chars": 896
+      },
+      "ingest_and_embed_seconds": 15.538,
+      "store_only_seconds": 0.391,
+      "embedding_tokens": 20891,
+      "estimated_cost_usd": 0.000418,
+      "stored_count_initial": 134,
+      "stored_count_after_reingest": 134,
+      "idempotent_reingest_verified": true
+    }
+  },
+  "retrieval_summary": {
+    "A": {
+      "all": {
+        "count": 20,
+        "hit_at_1_count": 11,
+        "hit_at_1_fraction": "11/20",
+        "hit_at_1_rate": 0.55,
+        "evidence_hit_at_3_count": 15,
+        "evidence_hit_at_3_fraction": "15/20",
+        "evidence_hit_at_3_rate": 0.75,
+        "split_evidence_error_count": 4,
+        "metadata_valid_fraction": "60/60",
+        "metadata_valid_rate": 1.0,
+        "filter_compliance_fraction": "2/5",
+        "filter_compliance_rate": 0.4
+      },
+      "dev": {
+        "count": 15,
+        "hit_at_1_count": 8,
+        "hit_at_1_fraction": "8/15",
+        "hit_at_1_rate": 0.5333,
+        "evidence_hit_at_3_count": 12,
+        "evidence_hit_at_3_fraction": "12/15",
+        "evidence_hit_at_3_rate": 0.8,
+        "split_evidence_error_count": 3,
+        "metadata_valid_fraction": "45/45",
+        "metadata_valid_rate": 1.0,
+        "filter_compliance_fraction": "0/3",
+        "filter_compliance_rate": 0.0
+      },
+      "test": {
+        "count": 5,
+        "hit_at_1_count": 3,
+        "hit_at_1_fraction": "3/5",
+        "hit_at_1_rate": 0.6,
+        "evidence_hit_at_3_count": 3,
+        "evidence_hit_at_3_fraction": "3/5",
+        "evidence_hit_at_3_rate": 0.6,
+        "split_evidence_error_count": 1,
+        "metadata_valid_fraction": "15/15",
+        "metadata_valid_rate": 1.0,
+        "filter_compliance_fraction": "2/2",
+        "filter_compliance_rate": 1.0
+      }
+    },
+    "B": {
+      "all": {
+        "count": 20,
+        "hit_at_1_count": 14,
+        "hit_at_1_fraction": "14/20",
+        "hit_at_1_rate": 0.7,
+        "evidence_hit_at_3_count": 18,
+        "evidence_hit_at_3_fraction": "18/20",
+        "evidence_hit_at_3_rate": 0.9,
+        "split_evidence_error_count": 0,
+        "metadata_valid_fraction": "60/60",
+        "metadata_valid_rate": 1.0,
+        "filter_compliance_fraction": "1/5",
+        "filter_compliance_rate": 0.2
+      },
+      "dev": {
+        "count": 15,
+        "hit_at_1_count": 10,
+        "hit_at_1_fraction": "10/15",
+        "hit_at_1_rate": 0.6667,
+        "evidence_hit_at_3_count": 14,
+        "evidence_hit_at_3_fraction": "14/15",
+        "evidence_hit_at_3_rate": 0.9333,
+        "split_evidence_error_count": 0,
+        "metadata_valid_fraction": "45/45",
+        "metadata_valid_rate": 1.0,
+        "filter_compliance_fraction": "0/3",
+        "filter_compliance_rate": 0.0
+      },
+      "test": {
+        "count": 5,
+        "hit_at_1_count": 4,
+        "hit_at_1_fraction": "4/5",
+        "hit_at_1_rate": 0.8,
+        "evidence_hit_at_3_count": 4,
+        "evidence_hit_at_3_fraction": "4/5",
+        "evidence_hit_at_3_rate": 0.8,
+        "split_evidence_error_count": 0,
+        "metadata_valid_fraction": "15/15",
+        "metadata_valid_rate": 1.0,
+        "filter_compliance_fraction": "1/2",
+        "filter_compliance_rate": 0.5
+      }
+    },
+    "C": {
+      "all": {
+        "count": 20,
+        "hit_at_1_count": 16,
+        "hit_at_1_fraction": "16/20",
+        "hit_at_1_rate": 0.8,
+        "evidence_hit_at_3_count": 19,
+        "evidence_hit_at_3_fraction": "19/20",
+        "evidence_hit_at_3_rate": 0.95,
+        "split_evidence_error_count": 0,
+        "metadata_valid_fraction": "60/60",
+        "metadata_valid_rate": 1.0,
+        "filter_compliance_fraction": "5/5",
+        "filter_compliance_rate": 1.0
+      },
+      "dev": {
+        "count": 15,
+        "hit_at_1_count": 12,
+        "hit_at_1_fraction": "12/15",
+        "hit_at_1_rate": 0.8,
+        "evidence_hit_at_3_count": 15,
+        "evidence_hit_at_3_fraction": "15/15",
+        "evidence_hit_at_3_rate": 1.0,
+        "split_evidence_error_count": 0,
+        "metadata_valid_fraction": "45/45",
+        "metadata_valid_rate": 1.0,
+        "filter_compliance_fraction": "3/3",
+        "filter_compliance_rate": 1.0
+      },
+      "test": {
+        "count": 5,
+        "hit_at_1_count": 4,
+        "hit_at_1_fraction": "4/5",
+        "hit_at_1_rate": 0.8,
+        "evidence_hit_at_3_count": 4,
+        "evidence_hit_at_3_fraction": "4/5",
+        "evidence_hit_at_3_rate": 0.8,
+        "split_evidence_error_count": 0,
+        "metadata_valid_fraction": "15/15",
+        "metadata_valid_rate": 1.0,
+        "filter_compliance_fraction": "2/2",
+        "filter_compliance_rate": 1.0
+      }
+    }
+  },
+  "coherence_summary": {
+    "A": {
+      "count": 10,
+      "score_0": 4,
+      "score_1": 6,
+      "score_2": 0,
+      "mean_score": 0.6
+    },
+    "B": {
+      "count": 10,
+      "score_0": 0,
+      "score_1": 3,
+      "score_2": 7,
+      "mean_score": 1.7
+    },
+    "C": {
+      "count": 10,
+      "score_0": 0,
+      "score_1": 3,
+      "score_2": 7,
+      "mean_score": 1.7
+    }
+  },
+  "grounding_summary": {
+    "A": {
+      "count": 5,
+      "score_0": 0,
+      "score_1": 2,
+      "score_2": 3,
+      "mean_score": 1.6
+    },
+    "B": {
+      "count": 5,
+      "score_0": 0,
+      "score_1": 1,
+      "score_2": 4,
+      "mean_score": 1.8
+    },
+    "C": {
+      "count": 5,
+      "score_0": 0,
+      "score_1": 1,
+      "score_2": 4,
+      "mean_score": 1.8
+    }
+  }
+}
