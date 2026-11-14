@@ -1,0 +1,551 @@
+[
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 1,
+    "status": "excluded",
+    "reason": "empty_or_image_only_cover_page",
+    "raw_char_count": 0,
+    "normalized_char_count": 0
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 2,
+    "status": "excluded",
+    "reason": "empty_or_image_only_cover_page",
+    "raw_char_count": 0,
+    "normalized_char_count": 0
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 3,
+    "status": "excluded",
+    "reason": "empty_or_image_only_cover_page",
+    "raw_char_count": 0,
+    "normalized_char_count": 0
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 4,
+    "status": "excluded",
+    "reason": "empty_or_image_only_cover_page",
+    "raw_char_count": 0,
+    "normalized_char_count": 0
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 5,
+    "status": "excluded",
+    "reason": "empty_or_image_only_cover_page",
+    "raw_char_count": 0,
+    "normalized_char_count": 0
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 6,
+    "status": "excluded",
+    "reason": "table_of_contents",
+    "raw_char_count": 281,
+    "normalized_char_count": 288
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 7,
+    "status": "excluded",
+    "reason": "empty_or_image_only_cover_page",
+    "raw_char_count": 0,
+    "normalized_char_count": 0
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 8,
+    "status": "excluded",
+    "reason": "empty_or_image_only_cover_page",
+    "raw_char_count": 0,
+    "normalized_char_count": 0
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 9,
+    "status": "excluded",
+    "reason": "dedication_page_under_200_chars",
+    "raw_char_count": 117,
+    "normalized_char_count": 127
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 10,
+    "status": "excluded",
+    "reason": "table_of_contents",
+    "raw_char_count": 294,
+    "normalized_char_count": 315
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 11,
+    "status": "excluded",
+    "reason": "table_of_contents",
+    "raw_char_count": 176,
+    "normalized_char_count": 186
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 12,
+    "status": "valid_content_page",
+    "section": "chapter_1",
+    "raw_char_count": 1560,
+    "normalized_char_count": 1500
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 13,
+    "status": "valid_content_page",
+    "section": "chapter_1",
+    "raw_char_count": 2492,
+    "normalized_char_count": 2363
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 14,
+    "status": "valid_content_page",
+    "section": "chapter_1",
+    "raw_char_count": 2295,
+    "normalized_char_count": 2145
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 15,
+    "status": "valid_content_page",
+    "section": "chapter_1",
+    "raw_char_count": 2230,
+    "normalized_char_count": 2068
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 16,
+    "status": "valid_content_page",
+    "section": "chapter_1",
+    "raw_char_count": 2099,
+    "normalized_char_count": 1996
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 17,
+    "status": "valid_content_page",
+    "section": "chapter_1",
+    "raw_char_count": 1986,
+    "normalized_char_count": 1929
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 18,
+    "status": "valid_content_page",
+    "section": "chapter_1",
+    "raw_char_count": 2243,
+    "normalized_char_count": 2160
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 19,
+    "status": "valid_content_page",
+    "section": "chapter_1",
+    "raw_char_count": 1901,
+    "normalized_char_count": 1779
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 20,
+    "status": "valid_content_page",
+    "section": "chapter_1",
+    "raw_char_count": 2043,
+    "normalized_char_count": 1939
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 21,
+    "status": "valid_content_page",
+    "section": "chapter_1",
+    "raw_char_count": 1971,
+    "normalized_char_count": 1850
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 22,
+    "status": "valid_content_page",
+    "section": "chapter_1",
+    "raw_char_count": 1984,
+    "normalized_char_count": 1900
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 23,
+    "status": "valid_content_page",
+    "section": "chapter_1",
+    "raw_char_count": 1857,
+    "normalized_char_count": 1781
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 24,
+    "status": "valid_content_page",
+    "section": "chapter_1",
+    "raw_char_count": 2190,
+    "normalized_char_count": 2109
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 25,
+    "status": "valid_content_page",
+    "section": "chapter_1",
+    "raw_char_count": 471,
+    "normalized_char_count": 457
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 26,
+    "status": "valid_content_page",
+    "section": "chapter_2",
+    "raw_char_count": 1508,
+    "normalized_char_count": 1421
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 27,
+    "status": "valid_content_page",
+    "section": "chapter_2",
+    "raw_char_count": 1997,
+    "normalized_char_count": 1863
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 28,
+    "status": "valid_content_page",
+    "section": "chapter_2",
+    "raw_char_count": 1943,
+    "normalized_char_count": 1867
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 29,
+    "status": "valid_content_page",
+    "section": "chapter_2",
+    "raw_char_count": 1914,
+    "normalized_char_count": 1841
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 30,
+    "status": "valid_content_page",
+    "section": "chapter_2",
+    "raw_char_count": 1953,
+    "normalized_char_count": 1899
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 31,
+    "status": "valid_content_page",
+    "section": "chapter_2",
+    "raw_char_count": 2322,
+    "normalized_char_count": 2216
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 32,
+    "status": "valid_content_page",
+    "section": "chapter_2",
+    "raw_char_count": 2018,
+    "normalized_char_count": 1929
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 33,
+    "status": "valid_content_page",
+    "section": "chapter_2",
+    "raw_char_count": 1913,
+    "normalized_char_count": 1862
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 34,
+    "status": "valid_content_page",
+    "section": "chapter_2",
+    "raw_char_count": 1797,
+    "normalized_char_count": 1716
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 35,
+    "status": "valid_content_page",
+    "section": "chapter_2",
+    "raw_char_count": 2509,
+    "normalized_char_count": 2339
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 36,
+    "status": "valid_content_page",
+    "section": "chapter_2",
+    "raw_char_count": 247,
+    "normalized_char_count": 237
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 37,
+    "status": "valid_content_page",
+    "section": "chapter_3",
+    "raw_char_count": 1504,
+    "normalized_char_count": 1397
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 38,
+    "status": "valid_content_page",
+    "section": "chapter_3",
+    "raw_char_count": 2066,
+    "normalized_char_count": 1985
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 39,
+    "status": "valid_content_page",
+    "section": "chapter_3",
+    "raw_char_count": 1512,
+    "normalized_char_count": 1467
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 40,
+    "status": "valid_content_page",
+    "section": "chapter_3",
+    "raw_char_count": 1815,
+    "normalized_char_count": 1737
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 41,
+    "status": "valid_content_page",
+    "section": "chapter_3",
+    "raw_char_count": 1532,
+    "normalized_char_count": 1498
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 42,
+    "status": "valid_content_page",
+    "section": "chapter_3",
+    "raw_char_count": 2117,
+    "normalized_char_count": 2000
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 43,
+    "status": "valid_content_page",
+    "section": "chapter_3",
+    "raw_char_count": 2136,
+    "normalized_char_count": 2009
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 44,
+    "status": "valid_content_page",
+    "section": "chapter_3",
+    "raw_char_count": 1992,
+    "normalized_char_count": 1899
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 45,
+    "status": "valid_content_page",
+    "section": "chapter_3",
+    "raw_char_count": 1992,
+    "normalized_char_count": 1879
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 46,
+    "status": "valid_content_page",
+    "section": "chapter_3",
+    "raw_char_count": 1757,
+    "normalized_char_count": 1668
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 47,
+    "status": "valid_content_page",
+    "section": "chapter_3",
+    "raw_char_count": 2026,
+    "normalized_char_count": 1903
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 48,
+    "status": "valid_content_page",
+    "section": "chapter_3",
+    "raw_char_count": 2178,
+    "normalized_char_count": 2050
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 49,
+    "status": "valid_content_page",
+    "section": "chapter_3",
+    "raw_char_count": 143,
+    "normalized_char_count": 133
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 50,
+    "status": "valid_content_page",
+    "section": "chapter_4",
+    "raw_char_count": 1116,
+    "normalized_char_count": 1071
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 51,
+    "status": "valid_content_page",
+    "section": "chapter_4",
+    "raw_char_count": 1667,
+    "normalized_char_count": 1608
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 52,
+    "status": "valid_content_page",
+    "section": "chapter_4",
+    "raw_char_count": 1937,
+    "normalized_char_count": 1893
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 53,
+    "status": "valid_content_page",
+    "section": "chapter_4",
+    "raw_char_count": 1520,
+    "normalized_char_count": 1492
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 54,
+    "status": "valid_content_page",
+    "section": "chapter_4",
+    "raw_char_count": 1518,
+    "normalized_char_count": 1458
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 55,
+    "status": "valid_content_page",
+    "section": "chapter_4",
+    "raw_char_count": 1333,
+    "normalized_char_count": 1292
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 56,
+    "status": "valid_content_page",
+    "section": "chapter_4",
+    "raw_char_count": 1906,
+    "normalized_char_count": 1812
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 57,
+    "status": "valid_content_page",
+    "section": "chapter_4",
+    "raw_char_count": 1963,
+    "normalized_char_count": 1864
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 58,
+    "status": "valid_content_page",
+    "section": "chapter_4",
+    "raw_char_count": 2089,
+    "normalized_char_count": 2021
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 59,
+    "status": "valid_content_page",
+    "section": "chapter_4",
+    "raw_char_count": 2164,
+    "normalized_char_count": 2084
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 60,
+    "status": "valid_content_page",
+    "section": "chapter_4",
+    "raw_char_count": 2018,
+    "normalized_char_count": 1924
+  },
+  {
+    "document_id": "hp1-ch1-4",
+    "source": "starter/data/harrypotter.pdf",
+    "page": 61,
+    "status": "valid_content_page",
+    "section": "chapter_4",
+    "raw_char_count": 1947,
+    "normalized_char_count": 1925
+  }
+]

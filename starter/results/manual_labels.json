@@ -1,0 +1,188 @@
+{
+  "annotator": "Đỗ Triệu Đức Phương (MSSV: 2A202603843) — tác giả bài lab chấm thủ công trực tiếp trên văn bản nguồn",
+  "bias_mitigation": "10 vị trí chấm Chunk Coherence được cố định trước theo thứ tự page_id (hp1-ch1-4_p012 đến hp1-ch1-4_p021 tại offset ký tự 460) và 5 câu hỏi test (q16-q20) được khóa trước khi chạy pipeline. Điểm Coherence và Grounding được chấm độc lập dựa trên nội dung văn bản thực tế.",
+  "coherence_labels": {
+    "A:hp1-ch1-4_p012": {
+      "score": 1,
+      "rationale": "Mở đầu trọn vẹn từ tiêu đề CHAPTER ONE, nhưng cuối chunk bị cắt cụt giữa từ ở ký tự 500 ('...Mrs. Dursley was thin and blonde and h' — từ 'had' bị cắt mất 'ad')."
+    },
+    "A:hp1-ch1-4_p013": {
+      "score": 1,
+      "rationale": "Mở đầu trọn câu, nhưng cuối chunk bị cắt ngang giữa câu ('...At half past eight, Mr. Dursley picked up his briefcase' — mất toàn bộ vế sau khi ông Dursley chào vợ con)."
+    },
+    "A:hp1-ch1-4_p014": {
+      "score": 0,
+      "rationale": "Đầu chunk mất chủ ngữ do nối từ trang 13 ('probably some silly stunt...'), cuối chunk lại đứt giữa từ ('...though people down in the street did; they p' — từ 'pointed' chỉ còn 'p')."
+    },
+    "A:hp1-ch1-4_p015": {
+      "score": 0,
+      "rationale": "Đầu chunk thiếu chủ ngữ ('always got so upset at any mention of her sister' — không rõ ai), cuối chunk bị cắt giữa từ ('...wearing a vio' — cụm 'violet cloak' bị cắt cụt)."
+    },
+    "A:hp1-ch1-4_p016": {
+      "score": 0,
+      "rationale": "Mở đầu thiếu vế câu trước ('last report on the evening news:'), cuối chunk bị cắt đứt giữa từ ('...over to Jim McGuffin wit' — từ 'with' chỉ còn 'wit')."
+    },
+    "A:hp1-ch1-4_p017": {
+      "score": 0,
+      "rationale": "Đầu chunk chỉ còn 1 từ cụt ('dare.' nối từ trang 16), cuối chunk bị cắt giữa từ ('...peered down into the fr' — cụm 'front garden' bị cắt còn 'fr')."
+    },
+    "A:hp1-ch1-4_p018": {
+      "score": 1,
+      "rationale": "Mở đầu trọn câu giới thiệu Albus Dumbledore, nhưng cuối chunk bị cắt ngay sau tên riêng đầu đoạn mới ('...This man’s name was Albus Dumbledore.\\n\\nAlbus Dumbledore')."
+    },
+    "A:hp1-ch1-4_p019": {
+      "score": 1,
+      "rationale": "Mở đầu rõ ràng bằng lời thoại của Dumbledore, nhưng cuối chunk bị cắt ngay sau đại từ nhân xưng ('...It was on their news.” She' — mất toàn bộ động từ phía sau)."
+    },
+    "A:hp1-ch1-4_p020": {
+      "score": 1,
+      "rationale": "Mở đầu trọn lời thoại, nhưng cuối chunk bị cắt ngang tên nhân vật ('...“I know you haven’t,” said Professor Mc' — tên 'McGonagall' bị cắt còn 'Mc')."
+    },
+    "A:hp1-ch1-4_p021": {
+      "score": 1,
+      "rationale": "Mở đầu từ lời thoại của McGonagall, nhưng cuối chunk bị cắt lửng ('...“It’s — it’s true ?” faltered' — mất chủ ngữ 'Professor McGonagall' đi sau động từ 'faltered')."
+    },
+    "B:hp1-ch1-4_p012": {
+      "score": 2,
+      "rationale": "Giữ trọn vẹn tiêu đề chương và 2 đoạn văn đầu tiên giới thiệu gia đình Dursley cùng công ty Grunnings, kết thúc tròn câu ('...there was no finer boy anywhere.')."
+    },
+    "B:hp1-ch1-4_p013": {
+      "score": 2,
+      "rationale": "Gom trọn vẹn 3 đoạn văn đầu trang 13 (buổi sáng thứ Ba, con cú bay qua cửa sổ, Dudley ăn vạ ném ngũ cốc), kết thúc đúng dấu chấm hết đoạn."
+    },
+    "B:hp1-ch1-4_p014": {
+      "score": 2,
+      "rationale": "Tại vị trí offset 460, chunk bắt đầu đúng đầu đoạn văn thứ hai ('Mr. Dursley always sat with his back to the window...') và kết thúc trọn đoạn ('...buy himself a bun from the bakery.')."
+    },
+    "B:hp1-ch1-4_p015": {
+      "score": 1,
+      "rationale": "Kết thúc trọn vẹn đoạn hội thoại của ông lão mặc áo choàng tím ('...this happy, happy day!”'), nhưng câu đầu tiên bị thiếu chủ ngữ do nối từ cuối trang 14 sang trang 15."
+    },
+    "B:hp1-ch1-4_p016": {
+      "score": 1,
+      "rationale": "Giữ nguyên vẹn toàn bộ lời bản tin thời sự về đàn cú và câu chuyển lời cho Jim McGuffin, nhưng dòng đầu ('last report on the evening news:') là phần nối từ cuối trang 15."
+    },
+    "B:hp1-ch1-4_p017": {
+      "score": 1,
+      "rationale": "Giữ trọn vẹn cuộc đối thoại giữa ông bà Dursley về tên của Harry và kết thúc tròn đoạn, nhưng đầu chunk còn dính từ 'dare.' do ngắt trang vật lý từ cuối trang 16."
+    },
+    "B:hp1-ch1-4_p018": {
+      "score": 2,
+      "rationale": "Tách đúng 1 đoạn văn hoàn chỉnh (482 ký tự) mô tả chi tiết ngoại hình của Albus Dumbledore, mở đầu và kết thúc trọn ý ('...This man’s name was Albus Dumbledore.')."
+    },
+    "B:hp1-ch1-4_p019": {
+      "score": 2,
+      "rationale": "Giữ trọn vẹn chuỗi đối thoại giữa Dumbledore và McGonagall về đàn cú, mưa sao băng ở Kent và Dedalus Diggle, kết thúc đúng ranh giới đoạn thoại."
+    },
+    "B:hp1-ch1-4_p020": {
+      "score": 2,
+      "rationale": "Giữ trọn vẹn đoạn tranh luận giữa Dumbledore và McGonagall về việc gọi thẳng tên Voldemort, không bị cắt lời thoại hay tên nhân vật."
+    },
+    "B:hp1-ch1-4_p021": {
+      "score": 2,
+      "rationale": "Gom trọn vẹn các lượt thoại xác nhận cái chết của Lily, James Potter và việc Harry sống sót, kết thúc tròn câu ('...“We can only guess,” said Dumbledore. “We may never know.”')."
+    },
+    "C:hp1-ch1-4_p012": {
+      "score": 2,
+      "rationale": "Giữ trọn vẹn tiêu đề chương và 2 đoạn văn đầu tiên giới thiệu gia đình Dursley cùng công ty Grunnings, kết thúc tròn câu ('...there was no finer boy anywhere.')."
+    },
+    "C:hp1-ch1-4_p013": {
+      "score": 2,
+      "rationale": "Gom trọn vẹn 3 đoạn văn đầu trang 13 (buổi sáng thứ Ba, con cú bay qua cửa sổ, Dudley ăn vạ ném ngũ cốc), kết thúc đúng dấu chấm hết đoạn."
+    },
+    "C:hp1-ch1-4_p014": {
+      "score": 2,
+      "rationale": "Tại vị trí offset 460, chunk bắt đầu đúng đầu đoạn văn thứ hai ('Mr. Dursley always sat with his back to the window...') và kết thúc trọn đoạn ('...buy himself a bun from the bakery.')."
+    },
+    "C:hp1-ch1-4_p015": {
+      "score": 1,
+      "rationale": "Kết thúc trọn vẹn đoạn hội thoại của ông lão mặc áo choàng tím ('...this happy, happy day!”'), nhưng câu đầu tiên bị thiếu chủ ngữ do nối từ cuối trang 14 sang trang 15."
+    },
+    "C:hp1-ch1-4_p016": {
+      "score": 1,
+      "rationale": "Giữ nguyên vẹn toàn bộ lời bản tin thời sự về đàn cú và câu chuyển lời cho Jim McGuffin, nhưng dòng đầu ('last report on the evening news:') là phần nối từ cuối trang 15."
+    },
+    "C:hp1-ch1-4_p017": {
+      "score": 1,
+      "rationale": "Giữ trọn vẹn cuộc đối thoại giữa ông bà Dursley về tên của Harry và kết thúc tròn đoạn, nhưng đầu chunk còn dính từ 'dare.' do ngắt trang vật lý từ cuối trang 16."
+    },
+    "C:hp1-ch1-4_p018": {
+      "score": 2,
+      "rationale": "Tách đúng 1 đoạn văn hoàn chỉnh (482 ký tự) mô tả chi tiết ngoại hình của Albus Dumbledore, mở đầu và kết thúc trọn ý ('...This man’s name was Albus Dumbledore.')."
+    },
+    "C:hp1-ch1-4_p019": {
+      "score": 2,
+      "rationale": "Giữ trọn vẹn chuỗi đối thoại giữa Dumbledore và McGonagall về đàn cú, mưa sao băng ở Kent và Dedalus Diggle, kết thúc đúng ranh giới đoạn thoại."
+    },
+    "C:hp1-ch1-4_p020": {
+      "score": 2,
+      "rationale": "Giữ trọn vẹn đoạn tranh luận giữa Dumbledore và McGonagall về việc gọi thẳng tên Voldemort, không bị cắt lời thoại hay tên nhân vật."
+    },
+    "C:hp1-ch1-4_p021": {
+      "score": 2,
+      "rationale": "Gom trọn vẹn các lượt thoại xác nhận cái chết của Lily, James Potter và việc Harry sống sót, kết thúc tròn câu ('...“We can only guess,” said Dumbledore. “We may never know.”')."
+    }
+  },
+  "grounding_labels": {
+    "A:q16": {
+      "score": 1,
+      "rationale": "Top-3 lấy đúng trang vàng p.44 ở hạng 1 và 2 (fixed_03, fixed_02), nhưng câu bằng chứng về 24 lá thư giấu trong 2 tá trứng nằm sát cuối cửa sổ fixed_03 (ký tự 1350–1850) và bị cắt ở mốc 1850, nên không chunk nào trong Top-3 chứa trọn câu."
+    },
+    "A:q17": {
+      "score": 1,
+      "rationale": "Top-3 trả về p.26 (cuối trang có câu Harry cố nhớ lại giấc mơ) và p.32 (Harry kể lại giấc mơ có chiếc mô-tô bay), nhưng thiếu đầu trang p.27 nơi nêu đầy đủ cả chiếc mô-tô bay lẫn cảm giác đã mơ giấc mơ này trước đó."
+    },
+    "A:q18": {
+      "score": 2,
+      "rationale": "Chunk hạng 1 (hp1-ch1-4_p052_fixed_01, p.52) chứa đầy đủ danh sách các vật dụng Hagrid lấy từ túi áo khoác (ấm đồng, gói xúc xích, que cời lửa, ấm trà, cốc sứt và chai rượu màu hổ phách) cùng nguồn trang chính xác."
+    },
+    "A:q19": {
+      "score": 2,
+      "rationale": "Chunk hạng 1 (hp1-ch1-4_p055_fixed_00, p.55) chứa nguyên văn bức thư của Phó Hiệu trưởng Minerva McGonagall ghi rõ ngày khai giảng 1/9 và hạn chót gửi cú phản hồi trước 31/7."
+    },
+    "A:q20": {
+      "score": 2,
+      "rationale": "Chunk hạng 2 (hp1-ch1-4_p061_fixed_03, p.61) chứa trọn vẹn lời giải thích của Hagrid về việc ông bị đuổi học năm thứ ba, bị bẻ gãy đũa phép và được Dumbledore cho ở lại làm người giữ khóa."
+    },
+    "B:q16": {
+      "score": 2,
+      "rationale": "Chunk hạng 1 (hp1-ch1-4_p044_para_02, p.44) giữ nguyên cả đoạn văn mô tả 24 lá thư được cuộn tròn giấu trong 2 tá trứng do người giao sữa đưa cho dì Petunia qua cửa sổ phòng khách."
+    },
+    "B:q17": {
+      "score": 1,
+      "rationale": "Top-3 trả về [p.32, p.26, p.35]: có thông tin Harry mơ thấy mô-tô bay (p.32) và chi tiết thức dậy cố nhớ lại giấc mơ (cuối p.26), nhưng do đoạn văn bị ngắt qua trang PDF p.26->p.27 nên thiếu câu đầu trang p.27 về cảm giác đã mơ giấc mơ này trước đây."
+    },
+    "B:q18": {
+      "score": 2,
+      "rationale": "Chunk hạng 1 (hp1-ch1-4_p052_para_01, p.52) chứa trọn vẹn đoạn văn liệt kê toàn bộ đồ vật Hagrid lấy từ túi áo khoác và chi tiết nướng xúc xích, đủ bằng chứng trả lời và truy vết nguồn."
+    },
+    "B:q19": {
+      "score": 2,
+      "rationale": "Chunk hạng 1 (hp1-ch1-4_p055_para_00, p.55) chứa đầy đủ nội dung thư của Giáo sư McGonagall (khai giảng 1/9, hạn gửi cú 31/7), tuy nhiên ở hạng 3 bị lọt chunk p.14 (chapter_1) do không dùng filter."
+    },
+    "B:q20": {
+      "score": 2,
+      "rationale": "Chunk hạng 1 (hp1-ch1-4_p061_para_01, p.61) chứa đầy đủ đoạn hội thoại Hagrid thú nhận bị đuổi học năm thứ ba, bị bẻ đũa phép và được Dumbledore giữ lại làm gamekeeper."
+    },
+    "C:q16": {
+      "score": 2,
+      "rationale": "Câu hỏi không có filter nên Chiến lược C giữ nguyên kết quả của B: chunk hạng 1 (hp1-ch1-4_p044_para_02, p.44) cung cấp đầy đủ bằng chứng về 24 lá thư giấu trong 2 tá trứng."
+    },
+    "C:q17": {
+      "score": 1,
+      "rationale": "Filter section=chapter_2 được tuân thủ 3/3 chunk ([p.32, p.26, p.35]), cung cấp được chi tiết mô-tô bay (p.32) và lúc mới ngủ dậy (p.26), nhưng thiếu câu đầu trang p.27 do đoạn văn bị ngắt qua ranh giới trang PDF."
+    },
+    "C:q18": {
+      "score": 2,
+      "rationale": "Chunk hạng 1 (hp1-ch1-4_p052_para_01, p.52) cung cấp đầy đủ danh sách các món đồ trong túi áo của Hagrid và ngữ cảnh nấu trà, nướng xúc xích."
+    },
+    "C:q19": {
+      "score": 2,
+      "rationale": "Nhờ filter section=chapter_4, cả 3 chunk Top-3 đều thuộc Chương 4 ([p.55, p.54, p.55]), và chunk hạng 1 (hp1-ch1-4_p055_para_00) chứa đầy đủ ngày khai giảng 1/9 cùng hạn phản hồi 31/7."
+    },
+    "C:q20": {
+      "score": 2,
+      "rationale": "Chunk hạng 1 (hp1-ch1-4_p061_para_01, p.61) chứa trọn vẹn lời giải thích của Hagrid về lý do không được phép dùng phép thuật và việc bị đuổi học năm thứ ba."
+    }
+  }
+}
